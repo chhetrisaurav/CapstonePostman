@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "18fea978-007a-4f67-9107-5f83b24d408a",
+		"name": "GoRestCapstone",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27483706"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "316a3a9e23dd642b866634a31cc50ed0cf640baf1f7ff3e42cbfd6207ccf19b5"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Micheal\",\r\n    \"email\": \"miceal@gmail.com\",\r\n    \"gender\": \"male\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Verify User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "316a3a9e23dd642b866634a31cc50ed0cf640baf1f7ff3e42cbfd6207ccf19b5"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/2568226"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "316a3a9e23dd642b866634a31cc50ed0cf640baf1f7ff3e42cbfd6207ccf19b5"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mical\",\r\n    \"email\": \"mical@yahoo.com\",\r\n    \"gender\": \"female\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users/2568226"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "316a3a9e23dd642b866634a31cc50ed0cf640baf1f7ff3e42cbfd6207ccf19b5"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/2568226"
+			},
+			"response": []
+		}
+	]
+}
